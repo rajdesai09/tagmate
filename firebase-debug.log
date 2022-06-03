@@ -1,0 +1,75 @@
+[debug] [2022-04-12T11:26:29.555Z] ----------------------------------------------------------------------
+[debug] [2022-04-12T11:26:29.557Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2022-04-12T11:26:29.557Z] CLI Version:   10.1.2
+[debug] [2022-04-12T11:26:29.557Z] Platform:      linux
+[debug] [2022-04-12T11:26:29.557Z] Node Version:  v16.13.2
+[debug] [2022-04-12T11:26:29.557Z] Time:          Tue Apr 12 2022 16:56:29 GMT+0530 (India Standard Time)
+[debug] [2022-04-12T11:26:29.557Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-04-12T11:26:29.590Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-04-12T11:26:29.590Z] > authorizing via signed-in user (raj@tatvic.com)
+[debug] [2022-04-12T11:26:29.590Z] [iam] checking project gtmanalytics-634b6 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-04-12T11:26:29.591Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2022-04-12T11:26:29.592Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-04-12T11:26:29.803Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","date":"Tue, 12 Apr 2022 11:26:29 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-04-12T11:26:29.821Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/gtmanalytics-634b6:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-04-12T11:26:31.268Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 12 Apr 2022 11:26:31 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1320","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-04-12T11:26:31.271Z] > refreshing access token with scopes: []
+[debug] [2022-04-12T11:26:31.272Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-04-12T11:26:31.509Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Tue, 12 Apr 2022 11:26:31 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-04-12T11:26:31.527Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/gtmanalytics-634b6 [none]
+[debug] [2022-04-12T11:26:32.015Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/gtmanalytics-634b6 200
+[debug] [2022-04-12T11:26:32.015Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/gtmanalytics-634b6 {"projectId":"gtmanalytics-634b6","projectNumber":"539624859257","displayName":"GTMAnalytics","name":"projects/gtmanalytics-634b6","resources":{"hostingSite":"gtmanalytics-634b6"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'gtmanalytics-634b6'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-04-12T11:26:32.017Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2022-04-12T11:26:32.017Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-04-12T11:26:32.254Z] <<< HTTP RESPONSE 200 {"date":"Tue, 12 Apr 2022 11:26:32 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-04-12T11:26:32.268Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/gtmanalytics-634b6/versions  
+ {"config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-04-12T11:26:34.198Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 12 Apr 2022 11:26:34 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[gtmanalytics-634b6]: beginning deploy... 
+[info] i  hosting[gtmanalytics-634b6]: found 2 files in public 
+[debug] [2022-04-12T11:26:34.205Z] > refreshing access token with scopes: []
+[debug] [2022-04-12T11:26:34.205Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-04-12T11:26:34.206Z] [hosting] hash cache [cHVibGlj] stored for 2 files
+[debug] [2022-04-12T11:26:34.206Z] [hosting][hash queue][FINAL] {"max":0,"min":0,"avg":0,"active":0,"complete":2,"success":2,"errored":0,"retried":0,"total":2,"elapsed":1}
+[debug] [2022-04-12T11:26:34.444Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Tue, 12 Apr 2022 11:26:34 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-04-12T11:26:34.454Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/sites/gtmanalytics-634b6/versions/6e5e8fdfcb8772ef:populateFiles [none]
+[debug] [2022-04-12T11:26:34.454Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/sites/gtmanalytics-634b6/versions/6e5e8fdfcb8772ef:populateFiles {"files":{"/404.html":"b7bab6b83fa074653ff28c8d2a64135d3434575f70a12ab3d3ba8080461b9537","/index.html":"02fa5d10e690019d828236630e7ebbefb01fbf8cf46282bba55328d7327a5aa2"}}
+[debug] [2022-04-12T11:26:36.284Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/sites/gtmanalytics-634b6/versions/6e5e8fdfcb8772ef:populateFiles 200
+[debug] [2022-04-12T11:26:36.284Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/sites/gtmanalytics-634b6/versions/6e5e8fdfcb8772ef:populateFiles {"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/gtmanalytics-634b6/versions/6e5e8fdfcb8772ef/files"}
+[debug] [2022-04-12T11:26:36.285Z] [hosting][populate queue][FINAL] {"max":2080,"min":2080,"avg":2080,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":2080}
+[debug] [2022-04-12T11:26:36.286Z] [hosting] uploads queued: 0
+[debug] [2022-04-12T11:26:36.286Z] [hosting][upload queue][FINAL] {"max":0,"min":9999999999,"avg":0,"active":0,"complete":0,"success":0,"errored":0,"retried":0,"total":0,"elapsed":1649762796286}
+[info] ✔  hosting[gtmanalytics-634b6]: file upload complete 
+[debug] [2022-04-12T11:26:36.287Z] [hosting] deploy completed after 2086ms
+[debug] [2022-04-12T11:26:36.292Z] [
+  {
+    "config": {
+      "public": "public",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "site": "gtmanalytics-634b6"
+    },
+    "site": "gtmanalytics-634b6",
+    "version": "sites/gtmanalytics-634b6/versions/6e5e8fdfcb8772ef"
+  }
+]
+[info] i  hosting[gtmanalytics-634b6]: finalizing version... 
+[debug] [2022-04-12T11:26:36.294Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2022-04-12T11:26:36.294Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-04-12T11:26:36.502Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Tue, 12 Apr 2022 11:26:36 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-04-12T11:26:36.515Z] >>> HTTP REQUEST PATCH https://firebasehosting.googleapis.com/v1beta1/sites/gtmanalytics-634b6/versions/6e5e8fdfcb8772ef?updateMask=status  
+ {"status":"FINALIZED"}

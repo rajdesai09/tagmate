@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- anti-flicker snippet (recommended)  -->
+    <style>
+        .async-hide {
+            opacity: 0 !important
+        }
+    </style>
+    <script>(function (a, s, y, n, c, h, i, d, e) {
+            s.className += ' ' + y; h.start = 1 * new Date;
+            h.end = i = function () { s.className = s.className.replace(RegExp(' ?' + y), '') };
+            (a[n] = a[n] || []).hide = h; setTimeout(function () { i(); h.end = null }, c); h.timeout = c;
+        })(window, document.documentElement, 'async-hide', 'dataLayer', 4000,
+            { 'GTM-KPT4ZSV': true });</script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+            Author: 'raj '
+        });
+    </script>
+    <!-- <script src="https://www.googleoptimize.com/optimize.js?id=OPT-KWBH2LX"></script> -->
+    <!-- <script>
+        
+
+        var plainObject = {
+            event: 'someValue',
+            someKey: 'someValue',
+            someOtherKey: 'someOtherValue'
+        };
+
+        window.dataLayer.push(plainObject);
+        window.dataLayer.push({
+            type_number: 5,
+            type_string: 'hello',
+            type_object: { someKey: 'someValue' },
+            type_array: [1, 2, 3, 4],
+            type_function: function () { return 'hello'; },
+            type_boolean: true
+
+        });
+
+
+        dataLayer.push({ 'event': 'dlTest' });
+
+        // 23
+        window.dataLayer.push({
+            userState: "logged-in"
+        });
+
+        window.dataLayer.push({
+            event: 'userDataPushed',
+            userLevel: 'platinum'
+        });
+
+        window.dataLayer.push({
+            pageState: 'loaded'
+        })
+
+        // 24.1
+        window.dataLayer.push({
+            example: {
+                numberValue: 5,
+                stringValue: "Hello",
+                objectValue: {
+                    deepValue: true
+                }
+            }
+        })
+        // 24.2
+        window.dataLayer.push({
+            example: {
+                numberValue: 10,
+                objectValue: {
+                    otherDeepValue: true
+                }
+            }
+        })
+        // google_tag_manager["GTM-KPT4ZSV"].dataLayer.get('example')
+        google_tag_manager['GTM-KPT4ZSV'].dataLayer.set('numberValue', '10')
+
+        // 25
+        window.dataLayer.push({
+            someArray: [1, 2, 3]
+        });
+        // google_tag_manager["GTM-KPT4ZSV"].dataLayer.get('someArray')
+        window.dataLayer.push({
+            someArray: [4, 5]
+        });
+        // google_tag_manager["GTM-KPT4ZSV"].dataLayer.get('someArray')
+
+
+        // 26
+        window.dataLayer.push({
+            someArray: [1, 2, 3]
+        });
+        // google_tag_manager["GTM-KPT4ZSV"].dataLayer.get('someArray')
+        window.dataLayer.push([
+            someArray.push, 4, 5
+        ]);
+        // google_tag_manager["GTM-KPT4ZSV"].dataLayer.get('someArray')
+
+
+
+
+
+    </script> -->
+
+
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-MGFPGRW');</script>
+    <!-- End Google Tag Manager -->
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tagmate</title>
+
+    <link rel="stylesheet" href="style.css">
+    <!-- font awesome style -->
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MGFPGRW" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Task1.html">Task 1</a></li>
+                <li><a href="Task2.html">Task 2</a></li>
+                <li><a href="Task3.html">Task 3</a></li>
+                <li><a href="Task4.html">Task 4</a></li>
+                <li><a href="Task5.html">Task 5</a></li>
+                <li><a href="Task6.html">Task 6</a></li>
+                <li><a href="sublime/index.html">Product</a></li>
+                <li><a href="https://www.tatvic.com/">Tatvic</a></li>
+                <li><a href="https://project1-suven.000webhostapp.com/">365Entertainment</a></li>
+                <li><a href="https://project2-suven.000webhostapp.com/">Blogging</a></li>
+                <li><a href="https://project-3-suven.000webhostapp.com/">CSS3 Animations</a></li>
+            </ul>
+        </nav>
+    </header>
+    <p>Task 1: Create one web page and add one heading with " Welcome To Tatvic!!" The Color of this heading should be
+        BLACK.
+        Just below that add one button with "Click Me" as button name.Now when we click on that button the heading text
+        color should be change to RED.</p>
+    <h1 style="text-align: center; color: white;" id="change">"Welcome to Tatvic!!"</h1>
+    <button style="margin: auto;" id="button0" onclick="red()">Click Me</button>
+    <br>
+    <button style="margin: auto;" id="button1" onclick="yellow()">Click Me (Yellow)</button>
+    <iframe src="" frameborder="0"></iframe>
+</body>
+<script>
+    function red() {
+        document.getElementById('change').style.color = "red";
+    }
+    function yellow() {
+        document.getElementById('change').style.color = "yellow";
+    }
+</script>
+
+</html>

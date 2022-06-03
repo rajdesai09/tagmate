@@ -1,0 +1,77 @@
+
+/* Task 4 CSS */
+body {
+    color: yellow; 
+    background-color: black;
+}
+
+
+#play-button,
+#button,
+#button0,
+#button1 {
+    display: flex;
+    width: 200px;
+    height: 40px;
+    padding: 0;
+    background: #009578;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    overflow: hidden;
+    font-family: "Quicksand", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+
+#play-button:hover,
+#button:hover,
+#button0:hover,
+#button1:hover {
+    background: #008168;
+}
+
+#play-button:active,
+#button:active
+#button0:active,
+#button1:active {
+    background: #006e58;
+}
+
+.navbar , .navbar1 {
+    background-color: lightgreen;
+    border-radius: 30px;
+    
+}
+
+
+.navbar ul , .navbar1 ul{
+    overflow: auto;
+}
+.navbar li , .navbar1 li {
+    float: left;
+    list-style: none;
+    margin: 13px 20px;
+}
+
+.navbar li a , .navbar1 li a{
+    padding: 3px 3px;
+    text-decoration: none;
+    color: rgb(230, 20, 177);
+}
+
+#flex{
+    display: flex;
+    justify-content: space-around;
+    color: black;
+}
+
+#add{
+background-color: rgb(189, 40, 40);    
+color: black;
+margin: 0;
+padding: 0;
+}

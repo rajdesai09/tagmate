@@ -2,27 +2,7 @@
 <html lang="en">
 
 <head>
-    <!-- anti-flicker snippet (recommended)  -->
-    <style>
-        .async-hide {
-            opacity: 0 !important
-        }
-    </style>
-    <script>(function (a, s, y, n, c, h, i, d, e) {
-            s.className += ' ' + y; h.start = 1 * new Date;
-            h.end = i = function () { s.className = s.className.replace(RegExp(' ?' + y), '') };
-            (a[n] = a[n] || []).hide = h; setTimeout(function () { i(); h.end = null }, c); h.timeout = c;
-        })(window, document.documentElement, 'async-hide', 'dataLayer', 4000,
-            { 'GTM-KPT4ZSV': true });</script>
-
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        window.dataLayer.push({
-            Author: 'raj '
-        });
-    </script>
-
-    <!-- <script src="https://www.googleoptimize.com/optimize.js?id=OPT-KWBH2LX"></script> -->
+    
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -72,18 +52,23 @@
     <div id="video">
     </div>
 
-    <div class="video">
+<!--     <div class="video">
         <iframe style="align-items: center; justify-content: center;padding-left: 520px;" width="560" height="315"
             src="https://www.youtube.com/embed/JfVOs4VSpmA?autoplay=1" title="YouTube video player" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
 
-    </div>
+    </div> -->
+        <video class="video" id="html5" controls="controls">
+        <source src="mov_bbb.mp4" type="video/mp4">
+        <!-- <source src="media/shuttle.ogv" type="video/ogg"> -->
+        Your browser does not support the HTML5 Video element.
+    </video>
 </body>
 <script>
     document.getElementById('play-button').addEventListener('click', () => {
         document.getElementById('video').innerHTML = ` 
-            <iframe style="align-items: center; justify-content: center;padding-left: 520px;" width="560" height="315" src="https://www.youtube.com/embed/JfVOs4VSpmA?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
+            <iframe style="align-items: center; justify-content: center;padding-left: 520px;" width="560" height="315" src="https://www.youtube.com/embed/yQEondeGvKo?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
     })
 </script>
 
